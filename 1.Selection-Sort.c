@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void main(){
     int i,temp,j,n,a,smallest,counter=0, arr[100];
     printf("Enter the size of list: ");
