@@ -19,7 +19,7 @@ int bst(int x,int b,int e)
             return bst(x,m+1,e);
         }
         else
-     {
+        {
             counter=counter+1;
             return bst(x,b,m-1);
         }
