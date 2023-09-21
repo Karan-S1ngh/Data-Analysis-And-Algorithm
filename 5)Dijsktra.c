@@ -49,3 +49,24 @@ void main()
  }
     printf("Time Complexity=%d\n",count);
 }
+
+
+/*OUTPUT
+Enter the number of nodes: 6
+Enter the cost matrix:
+0 7 0 0 0 3
+7 0 4 0 0 2
+0 4 0 8 5 5
+0 0 8 0 3 0
+0 0 5 3 0 6
+3 2 3 0 6 0
+Enter the source: 1
+Path -> Costs:
+1->0
+2->5
+3->6
+4->12
+5->9
+6->3
+Time Complexity=36
+ */
