@@ -3,6 +3,7 @@
 
 // Maximum number of vertices
 #define V 100
+
 int counter = 0;
 
 // Function to print the solution matrix
