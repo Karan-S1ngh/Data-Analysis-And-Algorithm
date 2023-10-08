@@ -1,4 +1,4 @@
-//Bellman Ford C Code
+// Bellman Ford C Code
 
 #include <stdio.h>
 #include <limits.h>
