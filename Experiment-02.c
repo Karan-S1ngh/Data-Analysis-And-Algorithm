@@ -1,4 +1,4 @@
-// Binary Search Technique C Code
+// Binary Search Technique C Program
 
 #include<stdio.h>
 
