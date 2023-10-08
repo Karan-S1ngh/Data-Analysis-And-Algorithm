@@ -1,3 +1,5 @@
+// Dijkstra C Code
+
 #include <stdio.h>
 #define infinity 999
 
