@@ -1,3 +1,5 @@
+// Longest Common Subsequence (LCS) C Program
+
 #include <stdio.h>
 #include <string.h>
 
