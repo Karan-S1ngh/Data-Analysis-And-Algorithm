@@ -48,10 +48,11 @@ Pattern found at index 9
 Pattern found at index 13
 
 
-Enter the text: acaabc
-Enter the pattern: aab
-Text: acaabc
-Pattern: aab
+Enter the text: acaabaca
+Enter the pattern: aca
+Text: acaabaca
+Pattern: aca
 Occurrences:
-Pattern found at index 2
+Pattern found at index 0
+Pattern found at index 5
 */
