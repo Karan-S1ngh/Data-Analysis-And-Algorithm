@@ -1,3 +1,5 @@
+//Binary Seach Technique C Code
+
 #include<stdio.h>
 
 int n,x,a[100],b,m,e;
