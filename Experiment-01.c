@@ -1,4 +1,4 @@
-//Selection Sort C Code
+// Selection Sort C Code
 
 #include <stdio.h>
 
