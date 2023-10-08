@@ -1,3 +1,5 @@
+// Knapsack C Code
+
 #include <stdio.h>
 
 void fractionalKnapsack(int n, int V[], int W[], int M) {
