@@ -59,6 +59,7 @@ int main() {
 
 
 
+
 /*OUTPUT
 Enter the size of the chessboard (N): 0
 Invalid input. Please enter a number between 1 and 10.
