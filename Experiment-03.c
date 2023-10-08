@@ -1,3 +1,5 @@
+// Merge Sort C Code
+
 #include <stdio.h>
 void Mergesort( int a[], int size ){
 if(size<=1){
