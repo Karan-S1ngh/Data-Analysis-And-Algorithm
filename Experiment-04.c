@@ -1,4 +1,4 @@
-// Knapsack C Code
+// Knapsack C Program
 
 #include <stdio.h>
 
