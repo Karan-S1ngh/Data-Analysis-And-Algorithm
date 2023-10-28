@@ -14,17 +14,17 @@ void main() {
     for (a = 0; a < n; a++) {
         printf("%d ", arr[a]);
     }
-
+    counter++;
     for (i = 1; i < n; i++) {
+        counter++;
         temp = arr[i];
         j = i - 1;
-        counter++; // Increment the counter for the initial comparison
         while (j >= 0 && arr[j] > temp) {
-            counter += 2; // Increment the counter for comparison and assignment
+            counter ++; 
             arr[j + 1] = arr[j];
             j = j - 1;
         }
-        counter++; // Increment the counter for the final comparison before the loop termination
+        counter++; 
         arr[j + 1] = temp;
     }
 
@@ -43,17 +43,17 @@ Enter the size of list: 5
 Enter 5 values: 1 2 3 4 5
 List before sorting is: 1 2 3 4 5 
 List after sorting is: 1 2 3 4 5 
-Time Complexity = 8
+Time Complexity = 9
 
 Enter the size of list: 5
 Enter 5 values: 5 1 4 2 3
 List before sorting is: 5 1 4 2 3 
 List after sorting is: 1 2 3 4 5 
-Time Complexity = 20
+Time Complexity = 15
 
 Enter the size of list: 5
 Enter 5 values: 5 4 3 2 1
 List before sorting is: 5 4 3 2 1 
 List after sorting is: 1 2 3 4 5 
-Time Complexity = 28
+Time Complexity = 19
 */
