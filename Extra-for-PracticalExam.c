@@ -1,39 +1,59 @@
+// Insertion Sort
+
 #include <stdio.h>
 
-void insertionSort(int arr[], int n) {
-    int i, j, key;
-    for (i = 1; i < n; i++) {
-        key = arr[i];
-        j = i - 1;
+void main() {
+    int i, j, temp, n, a, counter = 0, arr[100];
+    printf("Enter the size of list: ");
+    scanf("%d", &n);
+    printf("Enter %d values: ", n);
+    for (a = 0; a < n; a++) {
+        scanf("%d", &arr[a]);
+    }
+    printf("\nList before sorting is: ");
+    for (a = 0; a < n; a++) {
+        printf("%d ", arr[a]);
+    }
 
-        /* Move elements of arr[0..i-1], that are greater than key,
-           to one position ahead of their current position */
-        while (j >= 0 && arr[j] > key) {
+    for (i = 1; i < n; i++) {
+        temp = arr[i];
+        j = i - 1;
+        counter++; // Increment the counter for the initial comparison
+        while (j >= 0 && arr[j] > temp) {
+            counter += 2; // Increment the counter for comparison and assignment
             arr[j + 1] = arr[j];
             j = j - 1;
         }
-        arr[j + 1] = key;
+        counter++; // Increment the counter for the final comparison before the loop termination
+        arr[j + 1] = temp;
     }
+
+    printf("\nList after sorting is: ");
+    for (a = 0; a < n; a++) {
+        printf("%d ", arr[a]);
+    }
+    printf("\nTime Complexity = %d\n", counter);
 }
 
-int main() {
-    int i, n;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
 
-    int arr[n];
-    printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
 
-    insertionSort(arr, n);
 
-    printf("Sorted array: \n");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+/*OUTPUT
+Enter the size of list: 5
+Enter 5 values: 1 2 3 4 5
+List before sorting is: 1 2 3 4 5 
+List after sorting is: 1 2 3 4 5 
+Time Complexity = 8
 
-    return 0;
-}
+Enter the size of list: 5
+Enter 5 values: 5 1 4 2 3
+List before sorting is: 5 1 4 2 3 
+List after sorting is: 1 2 3 4 5 
+Time Complexity = 20
+
+Enter the size of list: 5
+Enter 5 values: 5 4 3 2 1
+List before sorting is: 5 4 3 2 1 
+List after sorting is: 1 2 3 4 5 
+Time Complexity = 28
+*/
